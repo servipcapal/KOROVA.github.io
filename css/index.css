@@ -2112,3 +2112,19 @@ BLOG-SINGLE-ONE
 
 
 }
+
+/*---------------------
+  Map
+-----------------------*/
+
+.map {
+    position: relative;
+    width: 90%;    
+    left: 80px;
+    align-items: center;
+    align-content: center;	
+}
+
+.map iframe {
+	width: 90%;
+}
