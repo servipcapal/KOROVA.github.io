@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="pdcc.min.css">
+<script charset="utf-8" src="pdcc.min.js"></script>
+<script type="text/javascript">
+PDCookieConsent.config({
+"defaultLang" : "es",
+"brand": {
+"dev" : false,
+"name": "KOROVA CLUB",
+"url" : "https://servipcapal.github.io/KOROVA.github.io/index-one.html",
+"websiteOwner" : "OROVA CLUB"
+},
+"cookiePolicyLink": "http://localhost/cookies.php",
+"hideModalIn": ["http://localhost/cookies.php"],
+"styles": {
+"primaryButton": {
+"bgColor" : "#A1FFA1",
+"txtColor": "#036900"
+},
+"secondaryButton": {
+"bgColor" : "#EEEEEE",
+"txtColor": "#333333"
+}
+}
+});
+</script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	<!-- Google Tag Manager -->
+	    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MB7HJ8K');</script>
+        <!-- End Google Tag Manager -->
+    
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <title>KOROVA CLUB</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -33,6 +70,11 @@
     
     </head>
 <body>
+    	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    <a href="#" class="pdcc-open-modal">Panel Cookies</a>
     <!-- MAIN CONTENT -->
     <main id="index-one">
 
@@ -108,15 +150,16 @@
     <img src="images/fondo.jpeg" alt="new-release">
 <div class="song-details">
     <div class="song-name">Radio Korova</div>
-    <div class="singer-name">Online</div>
+    <div class="singer-name">Techno Music</div>
     <div class="music-player">
     <div class="play-song">
-        <img src="images/play.png" alt="play" data-song="Radio" class="hover" >
+        <img src="images/play.png" alt="play" data-song="darkfire" class="hover" >
        
-        <audio src="https://0n-techno.radionetz.de/0n-techno.mp3" data-audio="Radio"></audio> <!--LINK AND NAME OF AUDIO YOU WANT TO PLAY-->
+        <audio src="https://0n-techno.radionetz.de/0n-techno.mp3" data-audio="Radio" autoplay></audio> <!--LINK AND NAME OF AUDIO YOU WANT TO PLAY-->
+
     </div>
     <div class="all-songs">
-        <a href="songs-one.html" title="All Songs"><i class="gg-arrow-right"></i></a>
+        <a href="#" title="All Songs"><i class="gg-arrow-right"></i></a>
     </div>
     </div>
 </div>
@@ -175,7 +218,20 @@
 
 
     </main>
+
+    <div class="aviso-cookies" id="aviso-cookies">
+		<img class="galleta" src="/template/images/cookie.svg" alt="Galleta">
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+		<button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+		<a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a> <br>
+        <a class="enlace" href="politica-privacidad.html">Polìticas de Privacidad y Tratamiento de Datos</a>
+	</div>
+	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+
     <!-- MAIN CONTENT -->
+    <script src="js/aviso-cookies.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bez.js"></script>
     <script src="js/pace.js"></script>
